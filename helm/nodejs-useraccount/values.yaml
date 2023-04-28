@@ -1,0 +1,15 @@
+deployment:
+  name: webapp-deployment
+  replicaCount: 3
+
+image:
+  repository: artisantek/useraccount:1
+  pullPolicy: Always
+  containerName: useraccount
+  imagePullSecrets: dockerhub
+  containerPort: 3080
+  
+service:
+  type: ClusterIP
+  clusterIPPort: 80
+

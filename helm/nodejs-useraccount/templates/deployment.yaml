@@ -13,10 +13,10 @@ spec:
         app: webapp
     spec:
       containers:
-      - image: {{ .Value.image.repository }}
-        imagePullPolicy: {{ .Value.image.pullPolicy }}
-        name: {{ .Value.image.containerName }}
+      - image: {{ .Values.image.repository }}
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        name: {{ .Values.image.containerName }}
         ports:
-        - containerPort: {{ .Value.image.containerPort }}
+        - containerPort: {{ .Values.image.containerPort }}
       imagePullSecrets:
-      - name: {{ .Value.image.imagePullSecrets }}
+      - name: {{ .Values.image.imagePullSecrets }}

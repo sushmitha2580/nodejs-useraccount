@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ingress
+  name: useraccount-ingress
 spec:
   ingressClassName: nginx
   rules:
@@ -13,4 +13,4 @@ spec:
           service:
             name: webapp-svc
             port: 
-              number: {{ .Values.image.clusterIPPort }}
+              number: {{ .Values.service.clusterIPPort }}

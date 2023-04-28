@@ -13,4 +13,4 @@ spec:
           service:
             name: webapp-svc
             port: 
-              number: {{ .Value.image.clusterIPPort }}
+              number: {{ .Values.image.clusterIPPort }}

@@ -4,7 +4,7 @@ metadata:
   name: webapp-svc
 spec:
   ports:
-  - port: {{ .Value.service.clusterIPPort }}
-    targetPort: {{ .Value.image.containerPort }}
+  - port: {{ .Values.service.clusterIPPort }}
+    targetPort: {{ .Values.image.containerPort }}
   selector:
     app: webapp

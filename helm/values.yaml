@@ -1,0 +1,12 @@
+deployment:
+  name: useraccount
+  replicaCount: 1
+
+image:
+  repository: artisantek/useraccount
+  tag: version1
+  
+service:
+  containerPort: 3080
+  nodePort: 31500
+

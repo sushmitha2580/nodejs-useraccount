@@ -3,10 +3,8 @@ kind: Service
 metadata:
   name: {{ .Values.deployment.name }}-svc
 spec:
-  type: NodePort
   ports:
-  - port: {{ .Values.service.containerPort }}
-    targetPort: {{ .Values.service.containerPort }}
-    nodePort: {{ .Values.service.nodePort }}
+  - port: {{ .Values.service.clusterIPPort }}
+    targetPort: {{ .Values.service.clusterIPPort }}
   selector:
     app: {{ .Values.deployment.name }}

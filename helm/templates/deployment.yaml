@@ -13,7 +13,7 @@ spec:
         app: {{ .Values.deployment.name }}
     spec:
       containers:
-      - image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+      - image: {{ .Values.image.account }}:{{ .Values.image.tag }}
         name: {{ .Values.deployment.name }}
         ports:
-        - containerPort: {{ .Values.service.containerPort }}
+        - containerPort: {{ .Values.service.clusterIPPort }}

@@ -6,4 +6,5 @@ image:
   tag: 1
 service:
   type: ClusterIP
-  clusterIPPort: 3080
+  clusterIPPort: 80
+  targetPort: 3080

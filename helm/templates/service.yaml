@@ -5,6 +5,6 @@ metadata:
 spec:
   ports:
   - port: {{ .Values.service.clusterIPPort }}
-    targetPort: {{ .Values.service.clusterIPPort }}
+    targetPort: {{ .Values.service.targetPort }}
   selector:
     app: {{ .Values.deployment.name }}

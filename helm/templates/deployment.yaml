@@ -16,4 +16,4 @@ spec:
       - image: {{ .Values.image.account }}:{{ .Values.image.tag }}
         name: {{ .Values.deployment.name }}
         ports:
-        - containerPort: {{ .Values.service.clusterIPPort }}
+        - containerPort: {{ .Values.service.targetPort }}

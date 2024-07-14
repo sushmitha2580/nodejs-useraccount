@@ -4,7 +4,6 @@ deployment:
 image:
   account: 227219889473.dkr.ecr.ap-southeast-1.amazonaws.com
   tag: 1
-  containerPort: 8080
 service:
   type: ClusterIP
-  clusterIPPort: 8080
+  clusterIPPort: 3080

@@ -2,7 +2,7 @@ deployment:
   name: useraccount
   replicaCount: 1
 image:
-  account: 227219889473.dkr.ecr.ap-southeast-1.amazonaws.com
+  account: 605134468487.dkr.ecr.ap-south-1.amazonaws.com
   tag: 1
 service:
   type: ClusterIP
